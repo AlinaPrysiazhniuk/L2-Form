@@ -6,6 +6,7 @@ export class Form extends Component {
     name: '',
     tag: '',
     experience: 'junior',
+    licence: false,
   };
 
   handleChange = event => {
@@ -20,6 +21,12 @@ export class Form extends Component {
     // console.log(this.state);
     this.props.onSubmit(this.state);
     this.reset();
+  };
+
+  handleLicenceChnange = event => {
+    console.log(event.currentTarget.checked);
+
+    this.setState({ licence: event.currentTarget.checked });
   };
 
   reset = () => {
@@ -83,6 +90,16 @@ export class Form extends Component {
           Senior
         </label>
         <br />
+        <label>
+          <input
+            type="checkbox"
+            name="licence"
+            checked={this.state.licence}
+            onChange={this.handleLicenceChnange}
+          />
+          Згоден
+        </label>
+
         <button type="submit">Send</button>
       </form>
     );
