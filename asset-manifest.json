@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/L2-Form/static/css/main.7acaea2f.css",
+    "main.js": "/L2-Form/static/js/main.07d3183d.js",
+    "index.html": "/L2-Form/index.html",
+    "main.7acaea2f.css.map": "/L2-Form/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/L2-Form/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
